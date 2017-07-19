@@ -399,3 +399,51 @@ header {
     width: 100%
 }
 
+/* ----------------------------- */
+/* FEATURES */
+/* ----------------------------- */
+
+.section-features .long-copy {
+    margin-bottom: 40px;
+}
+
+/* ----------------------------- */
+/* THUMBNAILS */
+/* ----------------------------- */
+
+.section-thumbnails {
+    padding: 0;
+}
+
+.thumbnails-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.thumbnails-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.thumb-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.thumb-photo img {
+    opacity: 0.6;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    -webkit-transition: transform 0.5s, opacity 1s;
+    -moz-transition: transform 0.5s, opacity 1s;
+    transition: transform 0.5s, opacity 1s;
+}
+
+.thumb-photo img:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
