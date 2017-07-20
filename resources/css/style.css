@@ -167,6 +167,10 @@
     box-sizing: border-box;
 }
 
+*:focus {
+    outline: none;
+}
+
 html {
     background-color: #EFF2F7;
     color: #555555;
@@ -174,6 +178,15 @@ html {
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
+}
+
+.clearfix{zoom: 1}
+.clearfix:after{
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
 }
 
 /* ------------------------------ */
@@ -278,7 +291,8 @@ h3 {
 /* ------------------------------ */
 
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type=submit] {
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
@@ -288,7 +302,8 @@ h3 {
 }
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type=submit] {
     background-color: #2ECC71;
     border: 1px solid #2ECC71;
     color: #EFF2F7;
@@ -302,12 +317,15 @@ h3 {
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
     background-color: #229552;
 }
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type=submit] {
     border: 1px solid #229552;
 }
 
@@ -446,4 +464,22 @@ header {
 .thumb-photo img:hover {
     opacity: 1;
     transform: scale(1.05);
+}
+
+/* --------------- */
+/* FORM */
+/* --------------- */
+.contact-form {
+    margin-top: 30px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
 }

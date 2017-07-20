@@ -64,7 +64,7 @@
     </section>
     
     <section class="section-thumbnails">
-        <ul class="thumbnails-showcase">
+        <ul class="thumbnails-showcase clearfix">
             <li>
                 <figure class="thumb-photo">
                     <img src="./resources/images/1.jpg" alt="1">
@@ -86,7 +86,7 @@
                 </figure>
             </li>
         </ul>
-        <ul class="thumbnails-showcase">
+        <ul class="thumbnails-showcase clearfix">
             <li>
                 <figure class="thumb-photo">
                     <img src="./resources/images/5.jpg" alt="5">
@@ -110,50 +110,45 @@
         </ul>
     </section>
 
-    <section class="section-features">
+    <section class="section-form">
         <div class="row">
-            <h2>Passionate about</h2>
-            <p class="long-copy">
-                Hello, I’m Evgeni Nikolov, a passionate web and mobile apps developer living in Sofia, Bulgaria currently working for MentorMate.
-            </p>
+            <h2>Do you want to work together?</h2>
         </div>
-
         <div class="row">
-            <div class="col span-1-of-3">
-                <h3>Web Development</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum nemo minima maxime ratione ad iusto, ab eligendi expedita alias nam voluptatum!</p>
-            </div>
-            <div class="col span-1-of-3">
-                <h3>Hybrid Mobile Apps</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum nemo minima maxime ratione ad iusto, ab eligendi expedita alias nam voluptatum!</p>
-            </div>
-            <div class="col span-1-of-3">
-                <h3>Web Design Novice</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum nemo minima maxime ratione ad iusto, ab eligendi expedita alias nam voluptatum!</p>
-            </div>
-        </div>
-    </section>
-    <section class="section-features">
-        <div class="row">
-            <h2>Passionate about</h2>
-            <p class="long-copy">
-                Hello, I’m Evgeni Nikolov, a passionate web and mobile apps developer living in Sofia, Bulgaria currently working for MentorMate.
-            </p>
-        </div>
-
-        <div class="row">
-            <div class="col span-1-of-3">
-                <h3>Web Development</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum nemo minima maxime ratione ad iusto, ab eligendi expedita alias nam voluptatum!</p>
-            </div>
-            <div class="col span-1-of-3">
-                <h3>Hybrid Mobile Apps</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum nemo minima maxime ratione ad iusto, ab eligendi expedita alias nam voluptatum!</p>
-            </div>
-            <div class="col span-1-of-3">
-                <h3>Web Design Novice</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum nemo minima maxime ratione ad iusto, ab eligendi expedita alias nam voluptatum!</p>
-            </div>
+            <form method="post" action="https://formspree.io/evgeni.tsn@gmail.com" class="contact-form">
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="text" name="name" id="name" placeholder="Your Name" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="email" name="email" id="email" placeholder="Your Email" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="message">Drop me a line</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <textarea name="message" id="message" cols="23" rows="4" placeholder="Write a message" required></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>&nbsp;</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="submit" value="Send it!">
+                    </div>
+                </div>
+            </form>
         </div>
     </section>
 </body>
