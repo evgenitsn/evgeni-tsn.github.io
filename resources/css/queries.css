@@ -1,0 +1,73 @@
+/* Big Tablets: from 1024px to 1200px */
+@media only screen and (max-width: 1200px) {
+    .hero-text-box{
+        width: 100%;
+        padding: 0 2%; 
+    }
+
+    .row{padding: 0 4%;}
+}
+
+/* Tablets: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+    body {
+        font-size: 18px;
+    }
+     
+    section {
+        padding: 60px 0;
+    }
+
+    .long-copy {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .contact-form {
+        width: 80%;
+    }
+}
+
+/* Larger phones: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 30px 0;
+    }
+
+    .row,
+    .hero-text-box {
+        padding: 0 4%;
+    }
+
+    .col {
+        width: 100%;
+        margin: 0 0 4% 0;
+    }
+    
+    .main-nav {
+        display: none;
+    }
+
+    h1 {
+        font-size: 180%;
+    }
+    
+    h2 {
+        font-size: 150%;
+    }
+}
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+    section {
+        padding: 25px 0;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+}

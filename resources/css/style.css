@@ -171,13 +171,15 @@
     outline: none;
 }
 
-html {
+html,
+body {
     background-color: #EFF2F7;
     color: #555555;
     font-family: 'Avenir', sans-serif;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
 .clearfix{zoom: 1}
