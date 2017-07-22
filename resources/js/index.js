@@ -12,3 +12,21 @@ $.ajax({
         }
     }
 });
+
+
+$('#submitbtn').click(function(e) {
+    e.preventDefault()
+    var name = $('#name').val()
+    var email = $('#email').val()
+    var message = $('#message').val()
+    $.ajax({
+        url: "https://formspree.io/evgeni.tsn@gmail.com", 
+        method: "POST",
+        data: {
+            name: name, 
+            email: email, 
+            message: message
+        },
+        dataType: "json"
+    });
+})
