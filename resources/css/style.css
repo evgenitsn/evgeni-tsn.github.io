@@ -490,7 +490,7 @@ textarea {
 
 footer {
     background-color: #273444;
-    padding: 60px;
+    padding: 50px;
 }
 
 .footer-nav {
@@ -531,8 +531,37 @@ footer {
      color: #EFF2F7;
 }
 
+.fa-facebook,
+.fa-instagram,
+.fa-linkedin,
+.fa-github,
+.fa-twitter {
+    transition: color 0.3s;
+}
+
+.fa-facebook:hover {
+    color: #3b5998;    
+}
+.fa-instagram:hover {
+    color: #c32aa3;
+}
+.fa-linkedin:hover {
+    color: #007bb6;
+}
+.fa-github:hover {
+    color: #24292e;
+}
+.fa-twitter:hover {
+    color: #00b6f1;
+}
+
 footer p {
     color: #8492A6;
     text-align: center;
     font-size: 90%;
+    margin-bottom: 5px;
+}
+
+footer p:first-child {
+    margin-top: 30px;
 }
