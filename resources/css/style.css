@@ -440,17 +440,18 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.70);
-    box-shadow: 0 2px 2px #ddd;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #999;
+    z-index: 9999;
 }
 
-.main-nav {
+.sticky .main-nav {
     margin-top: 18px;
 }
 
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited {
-    padding: 15px 0;
+    padding: 14px 0;
     color: #555555;
 }
 
