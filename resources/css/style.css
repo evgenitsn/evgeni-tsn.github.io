@@ -26,6 +26,12 @@
 }
 
 
+@-webkit-keyframes move {
+    0%   {top: 45%; left: 45%;}
+    100% {top: 4%; left: 8%;}
+}
+
+
 @keyframes move {
     0%   {top: 45%; left: 45%;}
     100% {top: 4%; left: 8%;}
@@ -300,6 +306,7 @@ input[type=submit] {
     font-weight: 300;
     text-decoration: none;
     border-radius: 200px;
+    -webkit-transition: background-color 0.6s, border 0.6s, color 0.6s;
     transition: background-color 0.6s, border 0.6s, color 0.6s;
 }
 
@@ -343,6 +350,7 @@ input[type=submit] {
 /* ------------------------------ */
 
 header {
+    background-image: -webkit-linear-gradient(rgba(23, 23, 23, 0.7), rgba(23, 23, 23, 0.7)), url('../images/hero.jpg');
     background-image: linear-gradient(rgba(23, 23, 23, 0.7), rgba(23, 23, 23, 0.7)), url('../images/hero.jpg');
     background-size: cover;
     background-position: center;
@@ -356,7 +364,8 @@ header {
     width: 1140px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%)
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%)
 }
 
 .logo {
@@ -364,12 +373,14 @@ header {
     width: auto;
     float: left;
     margin-top: 30px;
+    -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
 
 }
 
 .logo:hover{
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
     -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
 	        animation: heartbeat 1.5s ease-in-out infinite both;
 }
@@ -398,6 +409,7 @@ header {
     color: #EFF2F7;
     text-decoration: none;
     border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.6s;
     transition: border-bottom 0.6s;
 }
 
@@ -411,7 +423,8 @@ header {
     position: absolute;
     top: 4%;
     left: 8%;
-    animation: move 3s ease infinite;
+    -webkit-animation: move 3s ease infinite;
+            animation: move 3s ease infinite;
 }
 
 #header-nav{
@@ -457,15 +470,19 @@ header {
     opacity: 0.6;
     width: 100%;
     height: auto;
-    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
     -webkit-transition: transform 0.5s, opacity 1s;
-    -moz-transition: transform 0.5s, opacity 1s;
+    -webkit-transition: opacity 1s, -webkit-transform 0.5s;
+    transition: opacity 1s, -webkit-transform 0.5s;
     transition: transform 0.5s, opacity 1s;
+    transition: transform 0.5s, opacity 1s, -webkit-transform 0.5s;
 }
 
 .thumb-photo img:hover {
     opacity: 1;
-    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
 }
 
 /* --------------- */
@@ -523,6 +540,7 @@ footer {
      text-decoration: none;
      border: 0;
      color: #8492A6;
+     -webkit-transition: color 0.3s;
      transition: color 0.3s; 
 }
 
@@ -538,6 +556,7 @@ footer {
 .fa-linkedin,
 .fa-github,
 .fa-twitter {
+    -webkit-transition: color 0.3s;
     transition: color 0.3s;
 }
 
