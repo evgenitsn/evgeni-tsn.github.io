@@ -375,10 +375,26 @@ header {
     margin-top: 30px;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
+}
 
+.logo-black{
+    display: none;
+    height: 40px;
+    width: auto;
+    float: left;
+    margin: 7px 0;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
 }
 
 .logo:hover{
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+	        animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+.logo-black:hover{
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
     -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
@@ -418,6 +434,35 @@ header {
     border-bottom: 2px solid #2ECC71;
 }
 
+/* Sticky navigation */
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.70);
+    box-shadow: 0 2px 2px #ddd;
+}
+
+.main-nav {
+    margin-top: 18px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 15px 0;
+    color: #555555;
+}
+
+.sticky .logo {
+    display: none;
+}
+
+.sticky .logo-black {
+    display: block;
+}
+
+
 #animate {
     height: 50px;
     position: absolute;
@@ -427,10 +472,6 @@ header {
             animation: move 3s ease infinite;
 }
 
-#header-nav{
-    position: fixed;
-    width: 100%
-}
 
 /* ----------------------------- */
 /* FEATURES */
