@@ -628,3 +628,21 @@ footer p {
 footer p:first-child {
     margin-top: 30px;
 }
+
+/* Animations */
+
+.js-wp-1,
+.js-wp-2,
+.js-wp-3,
+.js-wp-4 {
+    opacity: 0;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+}
+
+.js-wp-1.animated, 
+.js-wp-2.animated,
+.js-wp-3.animated,
+.js-wp-4.animated {
+    opacity: 1;
+}
