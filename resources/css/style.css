@@ -401,6 +401,8 @@ header {
 	        animation: heartbeat 1.5s ease-in-out infinite both;
 }
 
+/* Main Navigation */
+
 .main-nav {
     /*font-family: 'Remachine', sans-serif;*/
     /*margin-top: 30px;*/
@@ -432,6 +434,19 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active {
     border-bottom: 2px solid #2ECC71;
+}
+
+/* Mobile navigation */
+.mobile-nav-icon{
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 180%;
+    color: #EFF2F7;
 }
 
 /* Sticky navigation */
