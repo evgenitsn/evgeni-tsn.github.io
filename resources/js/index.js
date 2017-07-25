@@ -44,13 +44,13 @@ $(document).ready(function() {
 
     $('.js-scroll-to-contact').click(function() {
         $('html, body').animate({
-            scrollTop: $('.js-section-contact').offset().top
+            scrollTop: $('.js-section-contact').offset().top - 50
         }, 1000)
     })
 
     $('.js-scroll-to-start').click(function() {
         $('html, body').animate({
-            scrollTop: $('.js-section-start').offset().top
+            scrollTop: $('.js-section-start').offset().top - 50
         }, 1000)
     })
 
@@ -75,6 +75,11 @@ $(document).ready(function() {
                 };
             });
         }}
+    });
+
+    $(".js-logo").click(function() {
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
     });
 
     $('.js-wp-1').waypoint(function(direction) {
