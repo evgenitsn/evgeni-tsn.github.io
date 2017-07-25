@@ -121,4 +121,9 @@
     .contact-form {
         width: 100%;
     }
+    .btn:link, .btn:visited, input[type=submit] {
+        margin: 0;
+        width: 60%;
+        margin-bottom: 10px;
+    }
 }
