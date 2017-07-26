@@ -350,8 +350,8 @@ input[type=submit] {
 /* ------------------------------ */
 
 header {
-    background-image: -webkit-linear-gradient(rgba(23, 23, 23, 0.7), rgba(23, 23, 23, 0.7)), url('../images/hero.jpg');
-    background-image: linear-gradient(rgba(23, 23, 23, 0.7), rgba(23, 23, 23, 0.7)), url('../images/hero.jpg');
+    background-image: -webkit-linear-gradient(rgba(23, 23, 23, 0.7), rgba(23, 23, 23, 0.7)), url('../images/hero-min.jpg');
+    background-image: linear-gradient(rgba(23, 23, 23, 0.7), rgba(23, 23, 23, 0.7)), url('../images/hero-min.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
