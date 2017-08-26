@@ -661,3 +661,8 @@ footer p:first-child {
 .js-wp-4.animated {
     opacity: 1;
 }
+
+.long-copy a{
+    text-decoration: none;
+    color: #2ECC71;
+}
