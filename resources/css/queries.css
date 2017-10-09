@@ -136,4 +136,8 @@
         width: 60%;
         margin-bottom: 10px;
     }
+
+    .main-techs img {
+        width: 17%;
+    }
 }
