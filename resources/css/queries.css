@@ -28,6 +28,12 @@
     }
 }
 
+@media only screen and (max-width: 900px) {
+    h3 {
+        font-size: 80%;
+    }
+}
+
 /* Larger phones: from 481px to 767px */
 @media only screen and (max-width: 767px) {
     body {
@@ -36,6 +42,10 @@
 
     section {
         padding: 30px 0;
+    }
+
+    h3{
+        font-size: 110%;
     }
 
     .row,
@@ -125,7 +135,21 @@
 /* Small phones: from 0 to 480px */
 @media only screen and (max-width: 480px) {
     section {
-        padding: 25px 0;
+        padding: 45px 0;
+    }
+
+    .section-header {
+        text-align: center;
+    }
+
+    .section-header:after {
+        margin: 0 auto;
+        margin-top: 5%;
+        width: 30%;
+    }
+
+    .section-features .long-copy{
+        line-height: 200%;
     }
 
     .contact-form {
@@ -139,5 +163,13 @@
 
     .main-techs img {
         width: 17%;
+    }
+    
+    .secondary-techs img{
+        width: 10%;
+    }
+
+    .secondary-techs{
+        margin-top: 35px;
     }
 }

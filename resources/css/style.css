@@ -19,6 +19,13 @@
 }
 
 @font-face {
+    font-family: 'Avenir-Bold';
+    src:
+        url('../fonts/Avenir Next Bold.otf')
+        format('opentype')
+}
+
+@font-face {
     font-family: 'Remachine';
     src:
         url('../fonts/RemachineScript_Personal_Use.ttf')
@@ -207,7 +214,7 @@ body {
 }
 
 section {
-    padding: 80px 0;
+    padding: 100px 0;
 }
 
 .box {
@@ -241,16 +248,23 @@ h1 {
 }
 
 h2 {
-    font-size: 180%;
+    font-size: 220%;
     word-spacing: 2px;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     letter-spacing: 1px;
 }
 
 h3 {
     font-size: 110%;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
+}
+
+.section-header{
+    font-weight: 900;
+    font-family: 'Avenir-Bold', sans-serif;
+    text-align: left;
+    color: #1f1f1f
 }
 
 .section-header:after {
@@ -258,13 +272,17 @@ h3 {
     height: 2px;
     background-color: #2ECC71;
     content: " ";
-    width: 100px;
-    margin: 0 auto;
+    width: 15%;
+    /* margin: 0 auto; */
     margin-top: 20px;
 }
 
 .name, .desc{
     color: #EFF2F7;
+}
+
+#projects{
+    background-color: #fafbfd;
 }
 
 /* ------------------------------ */
@@ -273,9 +291,10 @@ h3 {
 .long-copy{
     line-height: 145%;
     width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
-    text-align: center;
+    /* margin-left: 15%; */
+    /* margin-right: 15%; */
+    /* text-align: center; */
+    text-align: left;
 }
 
 .box p {
@@ -288,7 +307,7 @@ h3 {
 /* ------------------------------ */
 
 .icon-big {
-    font-size: 350%;
+    font-size: 250%;
     display: block;
     color: #2ECC71;
     margin-bottom: 10px;
@@ -354,7 +373,7 @@ header {
     background-image: linear-gradient(rgba(23, 23, 23, 0.7), rgba(23, 23, 23, 0.7)), url('../images/hero-min.jpg');
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 120vh;
     background-attachment: fixed;
 }
 
@@ -372,6 +391,7 @@ header {
     height: 50px;
     width: auto;
     float: left;
+    padding-left: 20px;
     margin-top: 30px;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
@@ -380,6 +400,8 @@ header {
 .logo-black{
     display: none;
     height: 40px;
+    padding: 5px;
+    padding-left:20px;
     width: auto;
     float: left;
     margin: 7px 0;
@@ -442,6 +464,8 @@ header {
     margin-top: 30px;
     cursor: pointer;
     display: none;
+    padding-right: 20px;
+    padding-top: 5px;
 }
 
 .mobile-nav-icon i {
@@ -494,7 +518,34 @@ header {
 /* ----------------------------- */
 
 .section-features .long-copy {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+    line-height: 220%;
+}
+
+.section-features .long-copy strong {
+    font-size: 103%;
+    color: #1f1f1f;
+}
+
+.section-features .long-copy a {
+    font-size: 103%;
+    font-weight: bold;
+}
+
+.about-row-heading{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.about-row-heading i {
+    margin-right: 10px;
+    padding-right: 10px;
+    transition: margin 300ms;
+}
+
+.sub-about-heading{
+    margin-bottom: 10px;
 }
 
 /* ----------------------------- */

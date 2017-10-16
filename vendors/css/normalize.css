@@ -120,19 +120,19 @@ abbr[title] {
  * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
  */
 
-b,
+/* b,
 strong {
   font-weight: inherit;
-}
+} */
 
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
 
-b,
+/* b,
 strong {
   font-weight: bolder;
-}
+} */
 
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
