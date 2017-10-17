@@ -709,6 +709,10 @@ footer p:first-child {
 
 /* Technologies Section */
 
+.main-techs img:last-child, .secondary-techs img:last-child, .third-techs img:last-child {
+    margin-right: 0;
+}
+
 .main-techs{
     margin-top: 20px;
     text-align: center;
@@ -716,6 +720,25 @@ footer p:first-child {
 .secondary-techs{
     margin-top: 60px;
     text-align: center;
+}
+.third-techs{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.main-techs img {
+    width: 12%;
+    margin-right: 2%;
+}
+
+.secondary-techs img {
+    width: 7%;
+    margin-right: 1%;
+}
+
+.third-techs img {
+    width: 5%;
+    margin-right: 1%;
 }
 .tech-logo{
     -webkit-filter: grayscale(90%);
@@ -732,18 +755,6 @@ footer p:first-child {
     -moz-transition: .3s ease-in-out;
     -o-filter: grayscale(0%);
     -o-transition: .3s ease-in-out;
-}
-.main-techs img {
-    width: 12%;
-    margin-right: 2%;
-}
-.main-techs img:last-child, .secondary-techs img:last-child {
-    margin-right: 0;
-}
-
-.secondary-techs img {
-    width: 7%;
-    margin-right: 1%;
 }
 
 /* Animations */
