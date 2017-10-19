@@ -172,4 +172,12 @@
     .secondary-techs{
         margin-top: 35px;
     }
+
+    .third-techs img {
+        width: 9%;
+    }
+
+    .third-techs {
+        margin-top: 30px;
+    }
 }
