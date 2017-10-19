@@ -634,26 +634,30 @@ footer {
     color: #EFF2F7 !important;
 }
 
-.social-links {
+.social-links, .social-links-header {
     list-style: none;
     float: right;
 }
 
 .footer-nav li,
-.social-links li {
+.social-links li,
+.social-links-header li {
     display: inline-block;
     margin-right: 20px;
 }
 
 .footer-nav li:last-child,
-.social-links li:last-child {
+.social-links li:last-child,
+.social-links-header li:last-child {
     margin-right: 0;
 }
 
 .footer-nav li a:link, 
 .footer-nav li a:visited,
 .social-links li a:link,
-.social-links li a:visited {
+.social-links li a:visited,
+.social-links-header li a:link,
+.social-links-header li a:visited {
      text-decoration: none;
      border: 0;
      color: #8492A6;
