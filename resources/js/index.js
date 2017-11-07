@@ -130,4 +130,12 @@ $(document).ready(function() {
             nav.hide()
         }
     })
+    
+
+    $('.js-tilt').tilt({
+        maxTilt: 6,
+        scale: 1,
+        glare: true,
+        maxGlare: .5
+    })
 })

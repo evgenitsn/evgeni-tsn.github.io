@@ -282,7 +282,7 @@ h3 {
 }
 
 #projects{
-    background-color: #f1f1f1;
+    background-color: #EAEAEA;
 }
 
 /* ------------------------------ */
@@ -512,6 +512,91 @@ header {
             animation: move 3s ease infinite;
 }
 
+#projects .card-outline{
+    flex: 1; /* additionally, equal width */
+    padding: 1em;
+    background-color: white;
+    border-radius: 16px;
+    background: #F6F6F6;
+    box-shadow: -3px 5px 2px rgba(0, 0, 0, 0.25);
+}
+
+.fl-only{
+    display: flex;
+}
+
+.fl {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.project-screenshots {
+    max-width: 100%;
+}
+
+.action-buttons button {
+    margin: 0 auto;
+    display: block;
+    width: 70%;
+    padding: 10px;
+    margin-top: 15px;
+    border: 0;
+    color: white;
+    background: linear-gradient(340.11deg, #1FBE55 -75.81%, #38F9D7 173.34%);
+    border-radius: 5px;
+    
+}
+
+.project-desc{
+    text-align: center;
+}
+
+.proj-logo{
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 5%;
+}
+
+.proj-name {
+    font-weight: 700;
+    color: black;
+    margin-bottom: 2%;
+}
+
+.section-heading {
+    color: #000;
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 4%;
+    margin-top: 2%;
+    font-weight: 700;
+}
+
+.project-desc:after {
+    display: block;
+    height: 2px;
+    background-color: #2ECC71;
+    content: " ";
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#projects ul{
+    margin-top: 20px;
+    list-style-type: none;
+    text-align: center;
+}
+
+#projects ul li {
+    border: 2px solid #2ECC71;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 2%;
+    margin: 1%;
+    font-size: 0.8em;
+}
 
 /* ----------------------------- */
 /* FEATURES */
