@@ -75,6 +75,10 @@
         margin: 0 20%;
     }
 
+    .fl-only{
+        display: block;
+    }
+
     .about-row-heading{
         justify-content: center;
     }

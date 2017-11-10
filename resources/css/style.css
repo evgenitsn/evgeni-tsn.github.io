@@ -369,8 +369,8 @@ input[type=submit] {
 /* ------------------------------ */
 
 header {
-    background-image: -webkit-linear-gradient(rgba(23, 23, 23, 0.7), rgba(23, 23, 23, 0.7)), url('../images/hero-min.jpg');
-    background-image: linear-gradient(rgba(23, 23, 23, 0.7), rgba(23, 23, 23, 0.7)), url('../images/hero-min.jpg');
+    background-image: -webkit-linear-gradient(rgba(23, 23, 23, 0.7), rgba(23, 23, 23, 0.7)), url('../images/test-img2.jpg');
+    background-image: linear-gradient(rgba(23, 23, 23, 0.7), rgba(23, 23, 23, 0.7)), url('../images/test-img2.jpg');
     background-size: cover;
     background-position: center;
     height: 120vh;
@@ -516,9 +516,12 @@ header {
     flex: 1; /* additionally, equal width */
     padding: 1em;
     background-color: white;
-    border-radius: 16px;
+    border-radius: 8px;
     background: #F6F6F6;
-    box-shadow: -3px 5px 2px rgba(0, 0, 0, 0.25);
+    opacity: 0.9;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    box-shadow: -2px 4px 2px rgba(0, 0, 0, 0.25);
 }
 
 .fl-only{
@@ -526,25 +529,46 @@ header {
 }
 
 .fl {
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .project-screenshots {
     max-width: 100%;
+    border-radius: 5px;
 }
 
-.action-buttons button {
+.action-buttons {
+    margin-top: 30px;
+}
+
+.action-buttons a {
     margin: 0 auto;
     display: block;
+    font-size: 0.8em;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 5%;
     width: 70%;
-    padding: 10px;
+    height: 40px;
     margin-top: 15px;
     border: 0;
     color: white;
     background: linear-gradient(340.11deg, #1FBE55 -75.81%, #38F9D7 173.34%);
-    border-radius: 5px;
-    
+    border-radius: 30px;
+}
+
+.action-buttons a:hover {
+    opacity: 0.8;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.action-buttons .disabled-links {
+    background: grey;
+    pointer-events: none;
+    cursor: default;
 }
 
 .project-desc{
@@ -552,6 +576,7 @@ header {
 }
 
 .proj-logo{
+    width: 30%;
     margin: 0 auto;
     display: block;
     margin-bottom: 5%;
@@ -560,16 +585,21 @@ header {
 .proj-name {
     font-weight: 700;
     color: black;
-    margin-bottom: 2%;
+    margin-bottom: 6%;
+    font-size: 140%;
 }
 
 .section-heading {
     color: #000;
     font-size: 1.8em;
-    text-align: center;
-    margin-bottom: 4%;
-    margin-top: 2%;
+    text-align: center;    
+    margin-bottom: 3%;
+    margin-top: 4%;
     font-weight: 700;
+}
+
+.secondary-proj-heading {
+    margin-top: 7%;
 }
 
 .project-desc:after {
@@ -582,20 +612,40 @@ header {
     margin-top: 10px;
 }
 
-#projects ul{
+.section-features ul{
     margin-top: 20px;
     list-style-type: none;
     text-align: center;
 }
 
-#projects ul li {
+.section-features ul li {
     border: 2px solid #2ECC71;
     box-sizing: border-box;
     border-radius: 5px;
     display: inline-block;
     padding: 2%;
     margin: 1%;
-    font-size: 0.8em;
+    font-size: 0.7em;
+}
+
+.secondary-proj{
+    padding-top: 3% !important;
+}
+
+.secondary-proj ul li {
+    padding: 1.5%;
+}
+
+.secondary-proj .action-buttons {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 6%;
+    margin-bottom: 12%;
+}
+
+.secondary-proj a {
+    padding-top: 3.5%;
+    width: 80%;
 }
 
 /* ----------------------------- */
@@ -692,8 +742,10 @@ input[type=email],
 textarea {
     width: 100%;
     padding: 7px;
-    border-radius: 3px;
-    border: 1px solid #ccc;
+    border-radius: 12px;
+    border: 1px solid #fff;
+    background-color: #EAEAEA;
+    padding-left: 20px;
 }
 
 /* --------------- */
