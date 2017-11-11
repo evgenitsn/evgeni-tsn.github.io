@@ -234,7 +234,7 @@ section {
 
 .desc {
     font-size: 100%;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
 }
 
 h1, h2, h3 {
@@ -369,11 +369,11 @@ input[type=submit] {
 /* ------------------------------ */
 
 header {
-    background-image: -webkit-linear-gradient(rgba(23, 23, 23, 0.7), rgba(23, 23, 23, 0.7)), url('../images/test-img2.jpg');
-    background-image: linear-gradient(rgba(23, 23, 23, 0.7), rgba(23, 23, 23, 0.7)), url('../images/test-img2.jpg');
+    background-image: -webkit-linear-gradient(rgba(23, 23, 23, 0.7), rgba(23, 23, 23, 0.85)), url('../images/glenn-carstens-peters-203007.jpg');
+    background-image: linear-gradient(rgba(23, 23, 23, 0.7), rgba(23, 23, 23, 0.85)), url('../images/glenn-carstens-peters-203007.jpg');
     background-size: cover;
     background-position: center;
-    height: 120vh;
+    height: 110vh;
     background-attachment: fixed;
 }
 
@@ -517,7 +517,7 @@ header {
     padding: 1em;
     background-color: white;
     border-radius: 8px;
-    background: #F6F6F6;
+    background: #fafbfd;
     opacity: 0.9;
     padding-top: 2%;
     padding-bottom: 2%;
@@ -549,7 +549,7 @@ header {
     font-size: 0.8em;
     text-decoration: none;
     text-align: center;
-    padding-top: 5%;
+    line-height: 40px;
     width: 70%;
     height: 40px;
     margin-top: 15px;
@@ -644,7 +644,7 @@ header {
 }
 
 .secondary-proj a {
-    padding-top: 3.5%;
+    line-height: 40px;
     width: 80%;
 }
 
@@ -706,7 +706,7 @@ header {
     width: 100%;
     margin: 0;
     overflow: hidden;
-    background-color: #000;
+    background-color: #1f1f1f;
 }
 
 .thumb-photo img {
@@ -791,7 +791,8 @@ footer {
 .social-links li,
 .social-links-header li {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 16px;
+    font-size: 18px;
 }
 
 .footer-nav li:last-child,
@@ -968,4 +969,9 @@ footer p:first-child {
 .long-copy a{
     text-decoration: none;
     color: #2ECC71;
+}
+
+#end-mail {
+    text-decoration: none;
+    color: #8492A6;
 }

@@ -22,6 +22,24 @@
         padding: 60px 0;
     }
 
+    .project-desc {
+        font-size: 75% !important;
+    }
+
+    .project-screenshots {
+        max-width: 80%
+    }
+
+    .action-buttons a { 
+        line-height: 30px;
+        height: 30px;
+    }
+
+    .secondary-proj a {
+        line-height: 30px;
+        height: 30px;
+    }
+
     .long-copy {
         width: 80%;
         margin-left: 10%;
@@ -129,7 +147,7 @@
     }
 
     .sticky .mobile-nav-icon {
-        margin-top: 15px;
+        margin-top: 10px;
     }
 
     .sticky .mobile-nav-icon i {
@@ -176,8 +194,64 @@
         display: flex;
         justify-content: center;
     }
-}
+    .section-heading {
+        font-size: 1.3em;
+        margin-bottom: 30px;
+    }
 
+    .proj-logo {
+        margin-top: 5%;
+        width: 25%;
+    }
+
+    .proj-name {
+        font-size: 230%;
+        margin-bottom: 3%;
+    }
+
+    .project-desc {
+        font-size: 120% !important;
+    }
+
+    .section-features ul li {
+        font-size: 1em;
+    }
+
+    .project-screenshots {
+        display: none;
+    }
+
+    .secondary-proj .proj-name {
+        font-size: 180%;
+        margin-top: 5%;
+    }
+
+    .secondary-proj .project-desc {
+        font-size: 110% !important;
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+@media only screen and (max-height : 470px) {
+    .logo {
+        height: 35px;
+    }
+    .desc {
+        margin-bottom: 15px;
+        font-size: 80%;
+    }
+    .name {
+        margin-top: 15px;
+        font-size: 130%;
+    }
+    #header-icons {
+        margin-bottom: 15px;
+    }
+    .main-nav li a:link, .main-nav li a:visited {
+        font-size: 75%;
+    }
+}
 /* Small phones: from 0 to 480px */
 @media only screen and (max-width: 480px) {
     section {
@@ -188,6 +262,7 @@
         line-height: 200%;
     }
 
+    
     .contact-form {
         width: 100%;
     }
