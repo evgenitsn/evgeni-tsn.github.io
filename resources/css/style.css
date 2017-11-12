@@ -35,14 +35,12 @@
 
 @-webkit-keyframes move {
     0%   {top: 45%; left: 45%;}
-    15%   {top: 45%; left: 45%;}
     100% {top: 4%; left: 9%;}
 }
 
 
 @keyframes move {
     0%   {top: 45%; left: 45%;}
-    15%   {top: 45%; left: 45%;}
     100% {top: 4%; left: 9%;}
 }
 /* ----------------------------------------------
@@ -187,8 +185,8 @@
     opacity: 0;
     width: 100%;
     height: 100%;
-    -webkit-animation: fadeinout 2.5s ease-in;
-    animation: fadeinout 2.5s ease-in;
+    -webkit-animation: fadeinout 2s ease-in;
+    animation: fadeinout 2s ease-in;
 }
 
 
