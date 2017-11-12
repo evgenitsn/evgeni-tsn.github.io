@@ -138,4 +138,6 @@ $(document).ready(function() {
         glare: true,
         maxGlare: .5
     })
+
+    setTimeout(() => $('#black-overlay').hide(), 1000)
 })
