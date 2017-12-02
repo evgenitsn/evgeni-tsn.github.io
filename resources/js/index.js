@@ -2,6 +2,17 @@ var url = 'https://api.instagram.com/v1/users/37619101/media/recent?access_token
 
 setTimeout(() => $('#black-overlay').remove(), 2000)
 
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+      .register('/sw.js')
+      .then(function () {
+        console.log('Service worker registered!');
+      })
+      .catch(function(err) {
+        console.log(err);
+      });
+  }
+  
 $(document).ready(function() {
     // $.ajax({
     //     url: url,
