@@ -1,4 +1,4 @@
-# evgeni-tsn.github.io
+# Evgeni Nikolov Portfolio / e.tsn;
 
 ## Personal portfolio ##
 - Vanilla JS + HTML5 + CSS3
