@@ -1,5 +1,7 @@
 var url = 'https://api.instagram.com/v1/users/37619101/media/recent?access_token=37619101.34e42b0.225c784d9f6948b7929faf8835681018'
 
+setTimeout(() => $('#black-overlay').remove(), 2000)
+
 $(document).ready(function() {
     // $.ajax({
     //     url: url,
@@ -130,14 +132,4 @@ $(document).ready(function() {
             nav.hide()
         }
     })
-    
-
-    $('.js-tilt').tilt({
-        maxTilt: 6,
-        scale: 1,
-        glare: true,
-        maxGlare: .5
-    })
-
-    setTimeout(() => $('#black-overlay').hide(), 1000)
 })

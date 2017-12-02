@@ -169,6 +169,7 @@
 
 @-webkit-keyframes fadeinout {
     0% { opacity: 1; }
+    70% { opacity: 0; }
     100% { opacity: 0; }
 }
   
@@ -185,8 +186,8 @@
     opacity: 0;
     width: 100%;
     height: 100%;
-    -webkit-animation: fadeinout 2s ease-in;
-    animation: fadeinout 2s ease-in;
+    -webkit-animation: fadeinout 1.5s ease-in;
+    animation: fadeinout 1.5s ease-in;
 }
 
 
