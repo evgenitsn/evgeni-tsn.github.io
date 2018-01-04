@@ -971,6 +971,10 @@ footer p:first-child {
     text-align: center;
 }
 
+#submitbtn{
+  cursor: pointer;
+}
+
 /* Animations */
 
 .js-wp-1,

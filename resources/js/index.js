@@ -28,7 +28,8 @@ $(document).ready(function() {
     // });
 
 
-    $('#submitbtn').click(function(e) {
+    $('#submitbtn').on('click', function(e) {
+        
         e.preventDefault()
         var name = $('#name').val()
         var email = $('#email').val()
@@ -42,7 +43,15 @@ $(document).ready(function() {
                 message: message
             },
             dataType: "json"
-        });
+        }).done(function() {
+            $('html, body').animate({
+                scrollTop: 0
+            }, 1000)
+            $('#name').val('')
+            $('#email').val('')
+            $('#message').val('')
+        })
+        console.log('Sent')
     })
 
     $('.js-sticky-nav').waypoint(function(direction) {
